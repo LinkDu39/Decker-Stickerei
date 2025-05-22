@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Global */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Justification du texte */
+p {
+    text-align: justify;
+}
+
+/* Header */
+header {
+    background-color: #3e4a61;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #2c3444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc70;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #3e4a61;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Images centrées avec espace */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 300px; /* On fixe la hauteur pour un carré */
+    object-fit: cover; /* Important pour garder le visuel centré et sans déformation */
+}
+
+
+/* Footer */
+footer {
+    background-color: #3e4a61;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    border-top: 4px solid #2c3444;
+}
+
+footer p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img{
+        width: 250px;
+        height: 250px;
+    }
+    
+}
